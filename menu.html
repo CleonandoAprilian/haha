@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHAHA - Milkshake, Tea, & Coffe</title>
+    <link rel="icon" type="image/png" href="images/ahaha.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <img src="images/ahaha.png" alt="AHAHA Logo" class="logo" />
+          <span class="brand-name">AHAHA</span>
+        </div>
+        <div class="navbar-menu" id="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html" class="nav-link">Kemitraan</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+            <!-- <li><a href="#locations" class="nav-link">Lokasi</a></li> -->
+          </ul>
+          <a href="https://wa.me/62882005092800?utm_campaign=linkinbio&utm_medium=referral&utm_source=later-linkinbio" target="_blank" class="btn btn-primary">Bergabung Sekarang</a>
+        </div>
+        <div class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- <section class="menu-header">
+        <div class="slideshow">
+          <button class="nav prev">❮</button>
+          <img src="images/menu1.png" class="active" alt="Slide 1" />
+          <img src="images/menu2.png" alt="Slide 2" />
+          <img src="images/promo4.jpg" alt="Slide 3" />
+          <button class="nav next">❯</button>
+        </div>
+    </section> -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title2">Our Menu</h2>
+          <p class="cta-description">Kami berkomitmen teguh terhadap kualitas dengan memilih bahan-bahan segar dan terbaik secara cermat, dengan tujuan menciptakan minuman bertekstur alami dan kaya rasa.</p>
+        </div>
+        <div class="menu-filter">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="tea">Tea Series</button>
+          <button data-filter="shake">Base Shake</button>
+          <button data-filter="latte">Latte</button>
+          <button data-filter="squash">Squash</button>
+          <button data-filter="yakult">Yakult</button>
+          <button data-filter="coffee">Coffee</button>
+          <button data-filter="special">Spesial Menu</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- Tea Series -->
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Apple tea.png" alt="Apple tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Apple Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Teh.png" alt="Jasmine Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Jasmine Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Teh.png" alt="Peach Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Peach Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Teh.png" alt="Lemon Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lemon Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Teh.png" alt="Lecy Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lecy Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="tea">
+            <div class="menu-image">
+              <img src="images/Teh.png" alt="Vanilla Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Vanilla Tea</h3>
+            </div>
+          </div>
+
+          <!-- Shake Series -->
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/greentea.png" alt="Green Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Green Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/choco.png" alt="Choco" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Choco</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/choco ori.png" alt="Choco Ori" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Choco Ori</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/choco tiramisu.png" alt="Choco Tiramisu" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Choco Tiramisu</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/choco hazlenut.png" alt="Choco Hazelnut" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Choco Hazelnut</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/choco vanila.png" alt="Choco Vanilla" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Choco Vanilla</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/taro.png" alt="Taro" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Taro</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="shake">
+            <div class="menu-image">
+              <img src="images/Avocado.png" alt="Avocado" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Avocado</h3>
+            </div>
+          </div>
+
+          <!-- Latte Series -->
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte redvelvet.png" alt="Latte Redvelvet" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Redvelvet</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte greentea.png" alt="Latte Green Tea" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Green Tea</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte choco.png" alt="Latte Choco" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Choco</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte choco ori.png" alt="Latte Choco Ori" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Choco Ori</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte tiramisu.png" alt="Latte Choco Tiramisu" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Choco Tiramisu</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/late hazelnut.png" alt="Latte Choco Hazelnut" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Choco Hazelnut</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte c vanila.png" alt="Latte Choco Vanilla" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Choco Vanilla</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte taro.png" alt="Latte Taro" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Taro</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="latte">
+            <div class="menu-image">
+              <img src="images/latte avo.png" alt="Latte Avocado" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Avocado</h3>
+            </div>
+          </div>
+          <!-- Squash Series -->
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/blue curacau.png" alt="Squash Blue Curacau" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Blue Curacau Squash</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/strawberry.png" alt="Squash Strawberry" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Strawberry Squash</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/aple.png" alt="Squash Apple" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Apple Squash</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/lemon.png" alt="Squash Lemon" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lemon Squash</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/lecy.png" alt="Squash Lecy" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lecy Squash</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="squash">
+            <div class="menu-image">
+              <img src="images/red blue.png" alt="Squash Red Blue" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Red Blue Squash</h3>
+            </div>
+          </div>
+
+          <!-- Yakult Series -->
+          <div class="menu-card" data-category="yakult">
+            <div class="menu-image">
+              <img src="images/blueberry yakult.png" alt="Yakult Blue Curacau" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Blue Curacau Yakult</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="yakult">
+            <div class="menu-image">
+              <img src="images/strawberry yakult.png" alt="Yakult Strawberry" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Strawberry Yakult</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="yakult">
+            <div class="menu-image">
+              <img src="images/peach yakult.png" alt="Yakult Peach" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Peach Yakult</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="yakult">
+            <div class="menu-image">
+              <img src="images/lemon yakult.png" alt="Yakult Lemon" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lemon Yakult</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="yakult">
+            <div class="menu-image">
+              <img src="images/lecy yakult.png" alt="Yakult Lecy" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Lecy Yakult</h3>
+            </div>
+          </div>
+
+          <!-- Coffee Series -->
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/es kopi.png" alt="Es Kopi" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Es Kopi</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/es kopi susu mei 2025.png" alt="Es Kopi Susu" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Es Kopi Susu</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/kopasus.png" alt="Kopasus" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Kopasus</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/kopasus caramel.png" alt="Kopasus Caramel" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Kopasus Caramel</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/kopasus butterscotch.png" alt="Kopasus Butterscoth" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Kopasus Butterscoth</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/shaken creamy latte.png" alt="Shaken Creamy Latte" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Shaken Creamy Latte</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/kopasus coklat.png" alt="Kopasus Coklat" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Kopasus Coklat</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img src="images/latte c vanila 2.png" alt="Latte Avocado" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Latte Avocado</h3>
+            </div>
+          </div>
+
+          <!-- Special Series -->
+          <div class="menu-card" data-category="special">
+            <div class="menu-image">
+              <img src="images/susu oreo.png" alt="Susu Oreo" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Susu Oreo</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="special">
+            <div class="menu-image">
+              <img src="images/brownsugar.png" alt="Brown Sugar" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Brown Sugar</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="special">
+            <div class="menu-image">
+              <img src="images/dalgona redpelpet.png" alt="Dalgona redvalvet" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Dalgona Redvalvet</h3>
+            </div>
+          </div>
+          <div class="menu-card" data-category="special">
+            <div class="menu-image">
+              <img src="images/juarachoco.png" alt="Juara Choco" />
+            </div>
+            <div class="menu-content">
+              <h3 class="menu-title">Juara Choco</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-title">AHAHA</h3>
+            <p class="footer-tagline">Milkshake, Tea & Coffe</p>
+            <p class="footer-description">Minuman segar berkualitas untuk menemani hari-harimu.</p>
+            <img src="images/logo halal portrait png.png" alt="" class="logo-halal" />
+          </div>
+          <div class="footer-contact">
+            <h3 class="footer-title">Contact Us</h3>
+            <ul class="contact-list">
+              <li><i class="fas fa-phone"></i> +62 882-0050-92800</li>
+              <li><i class="fas fa-envelope"></i> ahahadrink@gmail.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Jl. Waru, Jaranan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198</li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-title">Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/ahaha.drink/?utm_campaign=linkinbio&utm_medium=referral&utm_source=later-linkinbio" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/ahaha.drink?utm_campaign=linkinbio&utm_medium=referral&utm_source=later-linkinbio" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.tiktok.com/@ahaha.drink?utm_campaign=linkinbio&utm_medium=referral&utm_source=later-linkinbio" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> AHAHA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="script.js">  </script>
+  </body>
+</html>
